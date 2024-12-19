@@ -24,6 +24,8 @@ void setup() {
 
   udp.begin(UDP_PORT);
   Serial.printf("UDP server started on port %d\n", UDP_PORT);
+
+  motor.init();
 }
 
 void loop() {
